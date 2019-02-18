@@ -22,6 +22,11 @@
 			return $this->$nameProperty;
 		}
 
+		public function setProperty($nameProperty, $newValue)
+		{
+			$this->$nameProperty = $newValue;
+		}
+
 		public function getTotalObject()
 		{
 			return $this->price * $this->quantity;
